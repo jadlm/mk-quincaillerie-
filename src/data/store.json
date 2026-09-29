@@ -1,0 +1,19 @@
+{
+  "name": "MK QUINCAILLERIE",
+  "tagline": "Votre partenaire en outillage, quincaillerie et équipement professionnel.",
+  "description": "Une adresse de proximité pour l'outillage, la quincaillerie, le bricolage et les fournitures de chantier.",
+  "phone": "",
+  "whatsapp": "",
+  "email": "",
+  "address": "Adresse à compléter",
+  "city": "Casablanca",
+  "country": "Maroc",
+  "latitude": null,
+  "longitude": null,
+  "hours": [
+    { "days": "Lundi - Vendredi", "hours": "À compléter" },
+    { "days": "Samedi", "hours": "À compléter" },
+    { "days": "Dimanche", "hours": "À compléter" }
+  ],
+  "socials": { "instagram": "", "facebook": "" }
+}
