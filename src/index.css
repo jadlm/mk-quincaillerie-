@@ -127,13 +127,22 @@ main{min-height:50vh}
 .review-item strong{display:flex;align-items:center;gap:5px;font-size:11px}
 .review-item time{display:block;margin-top:4px;color:#aab0b5;font-size:10px}
 .site-footer{background:#121920;color:white;padding-top:55px}
-.footer-main{display:grid;grid-template-columns:1.3fr .7fr 1fr;gap:80px;padding-bottom:45px}
+.footer-main{display:grid;grid-template-columns:1.15fr .65fr .95fr 1.3fr;gap:38px;padding-bottom:45px}
 .brand-light{color:white}
 .footer-brand-block p{max-width:260px;color:#abb1b5;font-size:12px;margin:18px 0 0}
 .footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:10px;color:#bbc0c2;font-size:11px}
 .footer-column h2{color:white;font-family:'DM Sans',sans-serif;font-size:12px;margin:0 0 7px;font-weight:700}
 .footer-column a:hover,.footer-bottom a:hover{color:var(--orange)}
 .footer-cta{display:inline-flex;align-items:center;gap:6px;color:var(--orange);font-weight:700;margin-top:6px}
+.footer-map-section{min-width:0;color:#bbc0c2}
+.footer-map-heading{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px}
+.footer-map-heading>svg{flex:0 0 auto;margin-top:2px;color:var(--orange)}
+.footer-map-heading>div>span{font-size:9px;font-weight:700;color:#aeb4b7}
+.footer-map-heading h2{margin:3px 0;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;color:#fff}
+.footer-map-heading p{margin:0;font-size:10px;color:#aeb4b7}
+.footer-map-frame,.footer-map-frame .leaflet-container{height:142px;width:100%;background:#343c43}
+.footer-map-placeholder,.footer-map-loading{height:142px;display:grid;place-items:center;padding:15px;background:#202a33;color:#bdc2c5;text-align:center;font-size:10px}
+.footer-map-directions{display:inline-flex;align-items:center;gap:7px;margin-top:11px;color:var(--orange);font-size:10px;font-weight:700}
 .footer-bottom{min-height:53px;border-top:1px solid #343a40;display:flex;align-items:center;justify-content:space-between;color:#9fa5a9;font-size:10px}
 .floating-contact{position:fixed;z-index:20;right:22px;bottom:22px;display:flex;align-items:center;gap:9px;padding:11px 15px;border-radius:28px;background:#217a50;color:#fff;box-shadow:0 5px 20px #0003;font-size:11px;font-weight:700}
 .whatsapp-glyph{width:21px;height:21px;border:1.5px solid #fff;border-radius:50%;display:grid;place-items:center;font-size:11px}
@@ -265,7 +274,7 @@ main{min-height:50vh}
   .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-image-link{height:160px}.product-info{padding:12px 11px 10px}.product-info h3{font-size:19px;min-height:40px}.product-info>p{font-size:10px;min-height:47px}.product-card-bottom{font-size:10px}
   .service-section{grid-template-columns:1fr;gap:32px;padding-block:64px}.service-title h2{font-size:42px}.service-points>div{padding:16px 0}
   .reviews-section{padding:45px 0}.reviews-inner{grid-template-columns:1fr;gap:23px}.reviews-inner h2{font-size:35px}.review-list{grid-template-columns:1fr;gap:5px}.review-item{padding:12px 15px}
-  .site-footer{padding-top:40px}.footer-main{grid-template-columns:1fr 1fr;gap:30px 20px;padding-bottom:30px}.footer-brand-block{grid-column:1/-1}.footer-bottom{min-height:60px;flex-wrap:wrap;gap:5px 15px;padding-block:12px;font-size:9px}.footer-bottom span:last-child{display:none}
+  .site-footer{padding-top:40px}.footer-main{grid-template-columns:1fr 1fr;gap:30px 20px;padding-bottom:30px}.footer-brand-block,.footer-map-section{grid-column:1/-1}.footer-map-frame,.footer-map-frame .leaflet-container,.footer-map-placeholder,.footer-map-loading{height:180px}.footer-bottom{min-height:60px;flex-wrap:wrap;gap:5px 15px;padding-block:12px;font-size:9px}.footer-bottom span:last-child{display:none}
   .floating-contact{right:13px;bottom:13px;padding:10px 12px}.floating-contact>span:last-child{display:none}
   .page-masthead{padding:52px 0 49px}.page-masthead h1{font-size:52px}.page-masthead:after{right:15px;bottom:-42px;font-size:150px}
   .catalog-section{padding-block:22px 65px}.catalog-toolbar{grid-template-columns:1fr 1fr;gap:8px}.search-field{grid-column:1/-1}.search-field,.select-field,.sort-field{height:44px}.search-field input{font-size:11px}.results-meta{padding-block:14px}

@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { lazy, Suspense, useState } from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import { ArrowUpRight, Menu, Search, X } from 'lucide-react'
 import { motion } from 'framer-motion'
 import store from '../data/store.json'
 import { buildWhatsAppUrl } from '../utils/catalog.js'
+
+const MapSection = lazy(() => import('./MapSection.jsx'))
 
 const navigation = [
   ['Produits', '/produits'],
@@ -46,6 +48,7 @@ export default function SiteLayout() {
           </div>
           <div className="footer-column"><h2>Explorer</h2><Link to="/produits">Produits</Link><Link to="/categories">Catégories</Link><Link to="/a-propos">À propos</Link><Link to="/contact">Contact</Link></div>
           <div className="footer-column"><h2>Nous contacter</h2><span>{store.phone || 'Téléphone à renseigner'}</span><span>{store.email || 'E-mail à renseigner'}</span><span>{store.address}, {store.city}</span><Link to="/devis" className="footer-cta">Parler de votre besoin <ArrowUpRight size={15} /></Link></div>
+          <Suspense fallback={<div className="footer-map-loading" role="status">Chargement de la carte…</div>}><MapSection compact /></Suspense>
         </div>
         <div className="footer-bottom wrap"><span>© 2026 MK QUINCAILLERIE</span><Link to="/mentions-legales">Mentions légales</Link><span>Catalogue professionnel</span></div>
       </footer>
