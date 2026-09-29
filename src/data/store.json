@@ -8,8 +8,8 @@
   "address": "Adresse à compléter",
   "city": "Casablanca",
   "country": "Maroc",
-  "latitude": null,
-  "longitude": null,
+  "latitude": 33.5297648,
+  "longitude": -7.7523551,
   "hours": [
     { "days": "Lundi - Vendredi", "hours": "À compléter" },
     { "days": "Samedi", "hours": "À compléter" },
